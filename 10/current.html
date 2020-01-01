@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>팝업 창 표시하기</title>
+</head>
+<body>
+  <script >
+    var now = new Date();
+    var hour = now.getHours();
+    var day = "";
+    if(hour>=12){
+        day = "오후";
+        hour = hour -12;
+    }
+    else{
+        day = "오전";
+    }
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    
+    document.write("<p>"+day+" "+hour+":"+minute+":"+second+"</p>");
+    </script>
+</body>
+</html>
